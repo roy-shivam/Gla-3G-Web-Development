@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic Contact Form</title>
+</head>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<body>
+    <h2>Contact Form</h2>
+    <form action="/submit" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
+
+
+......................
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <form action="/submit" method="post">
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname" required><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label><br><br>
+
+        <label for="skills">Skills:</label><br>
+        <input type="checkbox" name="skills" value="HTML"> HTML
+        <input type="checkbox" name="skills" value="CSS"> CSS
+        <input type="checkbox" name="skills" value="JavaScript"> JavaScript<br><br>
+
+        <label for="country">Country:</label><br>
+        <select id="country" name="country" required>
+            <option value="">--Select--</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+        </select><br><br>
+
+        <label for="resume">Upload Resume:</label><br>
+        <input type="file" id="resume" name="resume" required><br><br>
+
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
+
+
+
+
+
+
+...................
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Application Form</title>
+</head>
+<body>
+    <h2>Job Application Form</h2>
+    <form action="/submit" method="post">
+        
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname" placeholder="Enter first name" required><br><br>
+
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lname" placeholder="Enter last name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="example@mail.com" required><br><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10-digit number" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Job Details</legend>
+            <label for="position">Position Applied For:</label><br>
+            <select id="position" name="position" required>
+                <option value="">--Select Position--</option>
+                <option value="Frontend Developer">Frontend Developer</option>
+                <option value="Backend Developer">Backend Developer</option>
+                <option value="Full Stack Developer">Full Stack Developer</option>
+            </select><br><br>
+
+            <label for="experience">Years of Experience:</label><br>
+            <input type="number" id="experience" name="experience" min="0" max="50" required><br><br>
+
+            <label for="coverletter">Cover Letter:</label><br>
+            <textarea id="coverletter" name="coverletter" rows="5" cols="40" placeholder="Write here..." required></textarea><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Availability</legend>
+            <label for="startdate">Available Start Date:</label><br>
+            <input type="date" id="startdate" name="startdate" required><br><br>
+
+            <label for="relocate">Willing to Relocate?</label><br>
+            <input type="radio" id="yes" name="relocate" value="Yes" required> Yes
+            <input type="radio" id="no" name="relocate" value="No"> No<br><br>
+        </fieldset>
+
+        <input type="submit" value="Submit Application">
+    </form>
+</body>
+</html>
+
+
+
+
+
+<audio>
+    <source src='audio.mp3' type='audio/mpeg' controls>
+    </audio>
+
+
+
+
+
+
+
+
+
+    group selector, decendent selecter , bg color, rgb color model , hex color model, alpha channel, height and width property,  background image property, visibility property,  text allignment property, text decoration ,text transform property, line height, font property(font size,weight , style), icons using font,

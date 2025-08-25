@@ -1,0 +1,133 @@
+
+
+/*  Universal reset & font  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;  /* Improves readability */
+}
+
+/*  Body Background with Gradient  */
+body {
+    background: linear-gradient(to right, #f8f9fa, #eaf4ff); /* Light gradient */
+    background-attachment: fixed;
+    padding: 20px;
+}
+
+/* Headings  */
+h2 {
+    color: #2c3e50;   /* Dark navy */
+    text-align: center;
+    text-decoration: underline wavy #3498db; /* Fancy underline */
+    margin-bottom: 20px;
+}
+
+/*  Form Box Styling */
+form {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent box */
+    padding: 25px;
+    margin: 20px auto;
+    width: 450px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Soft shadow */
+}
+
+/*  Label Styling (Class Selector Example) */
+.label-style, label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+/* Input, Textarea, Select */
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form input[type="date"],
+form input[type="tel"],
+form input[type="file"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: all 0.3s;
+    background-color: #fdfdfd;
+}
+
+/*  Input Focus Effect  */
+form input:focus,
+form select:focus,
+form textarea:focus {
+    border-color: #3498db; /* Bright blue */
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.5);
+    outline: none;
+}
+
+/*  Submit Button Styling  */
+input[type="submit"] {
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Vibrant blue-violet */
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    display: block;
+    margin: 0 auto;
+}
+input[type="submit"]:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb); /* Reverse gradient on hover */
+    transform: scale(1.05);
+}
+
+/* ---- Resume File Upload Special Styling ---- */
+#resume {
+    border: 2px dashed rgba(0, 128, 255, 0.5);
+    padding: 8px;
+    background-color: #f0f8ff;
+}
+
+/* ---- Checkbox & Radio ---- */
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 6px;
+}
+
+/* ---- Text Area ---- */
+textarea {
+    resize: vertical;
+}
+
+/* ---- Audio Player Styling ---- */
+audio {
+    display: block;
+    margin: 25px auto;
+    border-radius: 8px;
+    background-color: #eaf4ff;
+    padding: 5px;
+}
+
+/* ---- Section Fieldset Styling ---- */
+fieldset {
+    border: 2px solid #3498db;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: rgba(240, 248, 255, 0.6);
+}
+legend {
+    font-weight: bold;
+    color: #2575fc;
+}
+/* Hue = pure color
+   Tint = right to left
+    Shade = up to down 
+      Tone = diagonal  */

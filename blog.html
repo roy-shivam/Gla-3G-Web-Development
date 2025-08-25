@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivam's Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        /* Group Selector */
+        h1, h2 {
+            text-align: center;
+            color: rgb(50, 50, 150);
+            text-transform: uppercase;
+        }
+
+        /* Descendant Selector */
+        #posts article p {
+            color: #444; /* hex color */
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        /* Background color and image */
+        body {
+            background-color: #f0f8ff;
+            background-image: url("https://www.transparenttextures.com/patterns/white-wall.png");
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* RGB and Alpha channel */
+        header {
+            background-color: rgba(255, 165, 0, 0.8);
+            padding: 15px;
+        }
+
+        /* Height & Width */
+        img {
+            height: 200px;
+            width: 200px;
+            border-radius: 10px;
+        }
+
+        /* Visibility */
+        .hidden-text {
+            visibility: hidden;
+        }
+
+        /* Text alignment and decoration */
+        nav a {
+            text-decoration: none;
+            color: darkblue;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            color: red;
+        }
+
+        /* Text Transform and Font properties */
+        #about p {
+            text-transform: capitalize;
+            font-size: 18px;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        /* Table Styling */
+        table {
+            margin: auto;
+            background-color: #fff;
+            border-collapse: collapse;
+            text-align: center;
+            width: 60%;
+        }
+
+        th {
+            background-color: rgb(200, 200, 255);
+            font-weight: bold;
+        }
+
+        td, th {
+            padding: 10px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            font-size: 14px;
+            background-color: #222;
+            color: white;
+            padding: 10px;
+        }
+
+        /* Adding Icons Example */
+        .icon {
+            color: green;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Website Header -->
+    <header>
+        <h1>Welcome to Shivam's Blog</h1>
+        <p><em>Sharing thoughts on Technology, Cloud, and Life 🚀</em></p>
+        <nav>
+            <a href="#home">Home</a> | 
+            <a href="#about">About</a> | 
+            <a href="#posts">Blog Posts</a> | 
+            <a href="#contact">Contact</a>
+        </nav>
+        <hr>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I am <strong>Shivam Kumar</strong>, a Cloud Engineer and Trainer. 
+           I love working with <abbr title="Amazon Web Services">AWS</abbr>, 
+           building IoT projects, and teaching students.</p>
+        <img src="https://via.placeholder.com/300" alt="Profile Image">
+        <hr>
+    </section>
+
+    <!-- Blog Posts -->
+    <section id="posts">
+        <h2>Latest Blog Posts</h2>
+
+        <article>
+            <h3>☁ My Journey with Cloud Computing</h3>
+            <p>I started working on <mark>AWS</mark> and gradually explored 
+               <u>Terraform, Docker, and Kubernetes</u>. 
+               It has been an exciting journey of learning and teaching.</p>
+
+            <h4>Key Tools I Use:</h4>
+            <ul>
+                <li>Amazon Web Services</li>
+                <li>Docker & Kubernetes</li>
+                <li>Terraform & CloudFormation</li>
+            </ul>
+        </article>
+
+        <article>
+            <h3>💡 Tips for Beginners in Programming</h3>
+            <p>Learning programming requires <strong>practice</strong> and consistency. 
+               Start small, build projects, and don’t be afraid of mistakes.</p>
+
+            <h4>Languages to Start:</h4>
+            <ol>
+                <li>Python</li>
+                <li>Java</li>
+                <li>JavaScript</li>
+            </ol>
+        </article>
+
+        <hr>
+    </section>
+
+    <!-- Table Example -->
+    <section>
+        <h2>📅 Upcoming Training Schedule</h2>
+        <table border="1" cellpadding="8">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Topic</th>
+                    <th>Duration</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1 Sept 2025</td>
+                    <td>HTML & CSS Basics</td>
+                    <td>2 hrs</td>
+                </tr>
+                <tr>
+                    <td>5 Sept 2025</td>
+                    <td>Cloud Computing Intro</td>
+                    <td>3 hrs</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+    </section>
+
+    <!-- Contact Section with Form -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Your Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="message">Your Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="40"></textarea><br><br>
+
+            <input type="submit" value="Send">
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <hr>
+        <p> &copy; Shivam's Blog </p>
+    </footer>
+
+</body>
+</html>
